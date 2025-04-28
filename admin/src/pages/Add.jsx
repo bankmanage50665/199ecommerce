@@ -122,7 +122,7 @@ const Add = ({token}) => {
 
         </div>
 
-        <div>
+        {/* <div>
           <p className='mb-2'>Product Sizes</p>
           <div className='flex gap-3'>
             <div onClick={()=>setSizes(prev => prev.includes("S") ? prev.filter( item => item !== "S") : [...prev,"S"])}>
@@ -145,7 +145,9 @@ const Add = ({token}) => {
               <p className={`${sizes.includes("XXL") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>XXL</p>
             </div>
           </div>
-        </div>
+        </div> */}
+
+        
 
         <div className='flex gap-2 mt-2'>
           <input onChange={() => setBestseller(prev => !prev)} checked={bestseller} type="checkbox" id='bestseller' />
